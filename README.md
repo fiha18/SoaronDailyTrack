@@ -1,2 +1,2 @@
 # SoaronDailyTrack
-This is a daily work tracker.
+Daily Work Track Record at Soaron.
