@@ -1,0 +1,14 @@
+Planning For Colorown
+Assembling a Drone.
+Motion and Flight of Drone.
+Launching to Building/Structure.
+Scanning of Building/Structure.
+
+
+The Computer Vision Engineering part comes mainly in the Scanning of Building/Structure.
+Computer Vision in Drones have mainly 3 Application:
+Object Tracking 
+Self Navigation
+Obstacle detection and Collision avoidance Technology.
+
+After a drown is launched near the building , the next step is to scan the building for portions to be painted and not to be painted. 
