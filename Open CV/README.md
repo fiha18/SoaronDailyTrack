@@ -30,5 +30,10 @@ Steps for installing OpenCV in Linux :
   17. sudo make install
 OpenCV is installed can be checked by these commands :
   18. python3 
-  >>> import cv2
-  >>> print(cv2__version__)
+      import cv2
+      print(cv2__version__)
+  
+Also while an open-cv  .py file and running it in the terminal if shows errors like " cv2.error: OpenCV(4.5.1-dev) /home/fihae/OpenCV/opencv/modules/highgui/src/window.cpp:651: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Cocoa support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'"
+
+Then type in terminal -  "pip install opencv-contrib-python".
+this will resolve the issue and will run opencv .py file. 
