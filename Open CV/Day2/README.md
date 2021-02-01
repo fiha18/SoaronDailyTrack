@@ -54,8 +54,6 @@ Gaussian Blur operation, the image is convolved with a Gaussian filter instead o
  
 As the order of kernel increases the intensity of blur also increase.
 
-
-CONVOLUTION 
 Convolution is simply an element-wise multiplication of two matrices followed by a sum.
 An image as a big matrix and kernel or convolutional matrix as a tiny matrix that is used for blurring, sharpening, edge detection, and other image processing functions.It’s normal to hand-define kernels to obtain various image processing functions.Blurring (average smoothing, Gaussian smoothing, median smoothing, etc.), edge detection (Laplacian, Sobel, Scharr, Prewitt, etc.), and sharpening — all of these operations are forms of hand-defined kernels that are specifically designed to perform a particular function.
 
