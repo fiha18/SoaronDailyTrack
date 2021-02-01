@@ -7,3 +7,4 @@ Installing imutils
 Images are read as a numpy multi-dimensional array, image height, width and depth are equivalent to shape of rows, number of columns and number of channels respectively.
 Depth is the number of channels — I am working with 3 color channels: Blue, Green, and Red.
 In OpenCV color images in the RGB (Red, Green, Blue) color space have a 3-tuple associated with each pixel: (B, G, R).
+Each value in BGR tuple can range from [0-255] that means colors possible is 256*256*256 = 16777216.
