@@ -20,3 +20,10 @@ cv2.imshow("Image", img)
 		2.) ADAPTIVE_THESH_GUASSIAN_c
 
 Both thresholding technique can be used depending on the condition.
+
+
+Erosion and Dilation 
+
+Used to reduce noise in Binary Image, these are a side effect of Thresholding.
+Erosion - Reduce the size of foreground objects we can erode the pixels given no. of Iteration.
+To Enlarge Region , use of Dilation.
