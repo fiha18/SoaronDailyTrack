@@ -17,6 +17,7 @@ Gaussian – based operator which computes second-order derivations in a digital
 
 Canny Edge Detection is an algorithm used to extract edges from images.This algorithm is based on the Grayscale images only.
 Convert image to grayscale first.
+
 	Canny(image, edges, threshold1, threshold2)
 		image - source image 
 		edges - destination image 
