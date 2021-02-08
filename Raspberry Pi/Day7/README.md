@@ -24,7 +24,42 @@ Ubuntu Server -  It comes with no desktop, and far less programs installed.
 
 
 
-SSH(Secure SHell)
+Secure SHell :
+A Major protocol to access the network devices and server over internet. It is a program to log into another computer over a network, to execute commands in a remote machine, and to move files from one machine to another.
+	1 - It provides strong authentication and secure communications over insecure channels. 
+	2 - SSH runs on port number 22 by default and it can be changed very easily. SSH is very secure because it shares and send messages in encrypted form which gives confidentiality and security of data over un-secure network like Internet.
+	3 - Once the data for communication is encrypted using SSH, it is extremely difficult to decrypt and read that data, so our passwords also become secure to travel on a public network.
+	4 - SSH also uses a public key for the authentication of users accessing a server and it is a great practice providing us extreme security.
+	5 -SSH protects a network from attacks. An attacker who has managed to take over a network can only force ssh to disconnect. He or she cannot play back the traffic or hijack the connection when encryption is enabled.
+	6 - Can be used to secure any type of protocols like HTTP or FTP.
+	7 - SSH can be used to transfer files to a remote server.
+
+
+To make SSH connection :
+	1 - Server host name - can be IP adress or domain name
+			ssh username@serverhost
+		
+	2 - Also needs authentication key to authenticate with remote server (either be Password or Key)
+
+	If authenticated then there will be welcome text and can do permitted work remotely.
+
+Keys - Public and Private Key
+
+	Private Key - stays on the local computer.
+
+	Public Key - can be provided to remote server also.
+
+To create a ssh key : 
+	
+	ssh-keygen
+
+To create ssh conection:
+	
+	ssh root@serverhostname
+
+scp/sftp/rsync - secure copy to remote server 
+
+Implementation in RaspberryPi 
 To access the command line of a Raspberry Pi remotely from another computer or device on the same network using SSH. The Raspberry Pi will act as a remote device, We can connect to it using a client on another machine.
 
 Using ifconfig - the current network status for the Raspberry model and note the IP Address given in the wlan sub heading.
