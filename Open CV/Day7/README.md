@@ -16,3 +16,11 @@ cv2.calcHist(images, channels, mask, histSize, ranges[, hist[, accumulate]])
 	
 	ranges : this is our RANGE. Normally, it is [0,256].
 
+Affine Transformation: 
+	Combines Linear Transformations, and Translations 
+
+	Propertities:
+		1-Origin does not necessary map to origin
+		2-Lines map to lines 
+		3-Parallel lines remains parallel
+		4-Ratios are preserved
