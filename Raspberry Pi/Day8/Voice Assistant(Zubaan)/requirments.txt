@@ -1,0 +1,17 @@
+beautifulsoup4==4.9.3
+certifi==2020.12.5
+chardet==4.0.0
+click==7.1.2
+gTTS==2.2.2
+idna==2.10
+more-itertools==8.7.0
+playsound==1.2.2
+requests==2.25.1
+selenium==3.141.0
+six==1.15.0
+soupsieve==2.1
+SpeechRecognition==3.8.1
+urllib3==1.26.3
+wikipedia==1.4.0
+wolframalpha==4.1.1
+xmltodict==0.12.0
