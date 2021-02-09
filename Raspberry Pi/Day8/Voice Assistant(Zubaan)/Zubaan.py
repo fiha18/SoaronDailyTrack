@@ -1,13 +1,15 @@
 import speech_recognition as sr 
 import datetime
+import time
 import wikipedia
 import requests 
 import playsound
 from gtts import gTTS 
 import os
+import webbrowser
 import wolframalpha 
 from selenium import webdriver
-
+from webdriver_manager.chrome import ChromeDriverManager
 def respond(output):
 	num = 0
 	print(output)
@@ -21,7 +23,7 @@ def respond(output):
 
 def get_audio():
 	r = sr.Recognizer()
-	with sr.Microphone(device_index=3) as src:
+	with sr.Microphone() as src:
 		#print("Something1")
 		r.adjust_for_ambient_noise(src, duration=0.5)
 		#r.record(src, duration=2)
@@ -68,30 +70,24 @@ while(1):
 		webbrowser.open_new_tab(text)
 		time.sleep(5)
 
-	elif 'calculate' or 'what is' in text :
-
-		question 	= get_audio()
-		app_id	 	= "API ID" 
-		client		= wolframaplha.Client(app_id)
-		res 		= client.query(question)
-		answer		= next(res.results).txt
-		respond("The answer is" + answer)
-
-	elif "open google" in text:
+	elif "google" in text:
 		webbrowser.open_new_tab("https://www.google.com/")
 		respond("google is open")
 		time.sleep(5)
 
 	elif 'youtube' in text:
-		driver 	= webdriver.Chrome(r'Mention Link')
+		driver = webdriver.Chrome(ChromeDriverManager().install())
 		driver.implicitly_wait(1)
 		driver.maximize_window()
 		respond("Opening Youtube")
-		indx 	= text.split().index('youtube')
-		query 	=text.split()[indx+1:]
-		driver.get("http://www.youtube.com/results?search_query =" + '+'.join(query))
+		indx = text.split().index('youtube')
+		query =text.split()[indx+1:]
+		txt = ""
+		for s in query:
+		 	txt += s
+		driver.get("https://www.youtube.com/results?search_query="+txt)
 
-	elif "open google docs" in text:
+	elif "docs" in text:
 		respond("Opening Google Docs")
 		webbrowser.open_new_tab("https://docs.google.com/document/")
 
