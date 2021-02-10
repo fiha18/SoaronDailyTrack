@@ -1,0 +1,24 @@
+COMPUTER VISION 
+  1. IMAGE 
+  2. VIDEO
+  3. 3D OBJECT
+  
+  
+POPULAR COMPUTER VISION TASK:
+  1. IMAGE SEGMENTATION
+  2. OBJECT DETECTION
+  3. IMAGE CLASSIFICATION
+  4. OBJECT TRACKING 
+  5. IMAGE GENERATION (DEEP FAKE)
+  6. FACE DETECTION
+  7. OPTICAL CHARACTER RECOGNITION
+
+TRANSFER LEARNING TECHNIQUE - for retraining a model 
+DEEP LEARNING - 
+Tensorflow
+PyTorch
+Keras 
+scikit-learn
+
+
+TRADITIONAL COMPUTER VISION - This works in a more efficient way than a deep nueral network model and consumes less code.
