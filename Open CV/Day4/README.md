@@ -74,5 +74,5 @@ cv2.drawContours(sourceImage, contours, index of contours, color, thickness)
 
 Contour Approximation Method - Contours are the boundaries of a shape with same intensity.It stores the (x,y) coordinates of the boundary. Two most common methods - 
 	1.) cv2.CHAIN_APPROX_NONE - All the boundary points are stored 
-	2.) cv2.CHAIN_APPROX_NONE - It removes all the redundaant points in Contour and compress it.
+	2.) cv2.CHAIN_APPROX_SIMPLE - It removes all the redundaant points in Contour and compress it.
 	
